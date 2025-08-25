@@ -1,0 +1,23 @@
+h1{
+    color:rgb(234, 147, 34);
+    background-color:purple;
+}
+h2{
+    background-color:Blue;
+}
+.box1{
+    /* 1 giá trị (cách xung quanh = giá trị đó
+    2 giá trị :giá trị đầu tiên(trên,dưới)
+                giá trị thứ 2(trái phải)
+    4 giá trị: trên-phải-dưới-trái*/
+    background-color:green;
+    /*margin:100px 50px 30px 20px;*/
+    width:auto;
+}
+.box2{
+    background-color:red;
+    padding: 100px;
+}
+.box3{
+    background-color:blue;
+}
