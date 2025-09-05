@@ -1,0 +1,40 @@
+body{
+    margin:0px;
+    display:flex;
+    justify-content:center;
+    justify-items: center;/*căn  ra giữa dọc*/
+}
+ul{
+    display:flex;    /*linh hoạt*/
+    list-style: none;  /*xóa dấu chấm */
+    gap:20px;
+     justify-content: center;  /*căn chữ ra giữa ngang */
+    
+}
+nav{
+    background-color: blue;
+    
+}
+li{
+    padding:20px;
+
+}
+.border{
+    border-right:1px solid gray ;
+}
+.danhmuc-lienket{
+    color:white;
+    text-decoration: none;
+    
+    
+
+}
+.banner-qc{
+    display:flex;
+    justify-content: center;
+
+}
+.qc{
+    display:flex;
+    justify-content: space-between;
+}
