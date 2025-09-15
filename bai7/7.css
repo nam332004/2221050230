@@ -1,0 +1,43 @@
+.icon{
+    color:blue;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:30px;
+    font-size:80px;
+    
+
+
+}
+.dangnhap{
+    border:solid ;
+    background-color: white;
+    
+    justify-content:center;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+.tieude{
+    display:flex;
+    justify-content: center;
+    font-size:20px;
+}
+.tieude2{
+    display:flex;
+    justify-content: center;
+    margin-top:2px;
+}
+
+.border{
+    border-bottom: 2px solid gray;
+    
+}
+.ten{
+    display:flex;
+    justify-content: space-between;
+    
+}
+.gioitinh{
+    display:flex;
+    
+}

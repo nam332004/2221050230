@@ -5,92 +5,88 @@
             margin: 0;
             padding: 0;
         }
-        .container {
+.container {
             display: flex;
             height: 100vh;
         }
-        .sidebar {
+.sidebar {
             width: 240px;
             background-color: #000000;
             padding: 20px;
         
         }
-        .upsidebar{
-             width: 240px;
-            background-color: #000000;
-            padding: 20px;
-        }
-        .sidebar h2 {
+ 
+.sidebar h2 {
             color: #b3b3b3;
             font-size: 14px;
             margin-bottom: 20px;
         }
-        .sidebar ul {
+.sidebar ul {
             list-style: none;
             padding: 0;
         }
-        .sidebar ul li {
+.sidebar ul li {
             padding: 10px 0;
             color: #ffffff;
         }
-        .sidebar ul li.active {
+.sidebar ul li.active {
             color: #1db954;
             font-weight: bold;
         }
-        .main-content {
+.main-content {
             flex: 1;
             padding: 20px;
         }
-        .playlist-header {
+.playlist-header {
             display: flex;
             align-items: center;
             margin-bottom: 20px;
         }
-        .playlist-header img {
+.playlist-header img {
             width: 200px;
             height: 200px;
             background-color: #2a2a2a;
             margin-right: 20px;
         }
-        .playlist-header h1 {
+.playlist-header h1 {
             font-size: 60px;
             margin: 0;
             color: #ffffff;
         }
-        .playlist-header p {
+.playlist-header p {
             color: #b3b3b3;
         }
-        .song-table {
+.song-table {
             width: 100%;
             border-collapse: collapse;
         }
-        .song-table th {
+.song-table th {
             text-align: left;
             padding: 10px;
             color: #b3b3b3;
             font-weight: normal;
         }
-        .song-table td {
+.song-table td {
             padding: 10px;
             border-top: 1px solid #2a2a2a;
         }
-        .song-table td:first-child {
+.song-table td:first-child {
             width: 40px;
         }
-        .song-table td img {
+.song-table td img {
             width: 40px;
             height: 40px;
             margin-right: 10px;
         }
-        .song-table td.duration {
+.song-table td.duration {
             text-align: right;
         }
-        .right-panel {
+.right-panel {
             width: 240px;
             background-color: #121212;
             padding: 20px;
         }
-        .right-panel img {
+.right-panel img {
             width: 100%;
             margin-bottom: 10px;
         }

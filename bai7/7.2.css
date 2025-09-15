@@ -1,0 +1,12 @@
+.main{
+    width:70%;
+    justify-content:center;
+    display:flex;
+    border:solid white ;
+    background-color: white;
+    margin-left:250px;
+    margin-top:150px;
+}
+.trai{
+    width:45%;
+}
