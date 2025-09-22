@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="b8.js"></script>
+    <script>
+        //để viết chú thích js dùng kí tự//
+        document.writeln("hello world" + "<br>");
+    </script>
+    <script>let hoTen = "Nguyen Hoang Nam";
+    document.writeln(hoTen + "<br>"); //+ để nối chuỗi//
+    //Hằng:ko thay đổi dc
+    const pi= 3.14;
+
+
+
+    //tính toán
+    let soThuNhat = 10;
+    let soThuHai= "9.5";
+    let soThuBa = 6;
+    
+    ketQua = soThuNhat % soThuHai; //% chia lấy phần dư
+    ketQua++;//tăng thêm 1 đơn vị
+    ketQua--;//giảm đi 1 dv
+    document.writeln(ketQua);
+    // soThuNhat += soThuHai;
+    //sothunhat= sothunhat+sothuhai
+    
+    document.writeln(soThuNhat);
+    document.writeln(soThuNhat === soThuHai);// phải cùng kiểu dữ liệu và giá trị
+    document.writeln(soThuNhat != soThuHai);//
+    document.writeln(soThuNhat !== soThuHai +"<br>");
+
+
+    let thongTinSV = {
+        hoTen: "Nguyễn Hoàng Nam",
+        gioiTinh:true,
+        tuoi:21,
+        lop:"CNTT địa học",
+    }
+    let diaChiSV={
+        thanhPho:"Hà Nội",
+        thiTran:"Đông Anh",
+        to:12,
+        duong:"Lâm Tiên",
+        soNha: 35,
+
+    }
+    thongTinSV.diaChi=diaChiSV
+    document.writeln("xinchào" +" "+ thongTinSV.hoTen +" "+thongTinSV.lop)
+    document.writeln("xinchào" +" "+ thongTinSV.hoTen +" "+thongTinSV.lop+thongTinSV.diaChi.thanhPho+thongTinSV.diaChi.to+thongTinSV.diaChi.soNha )
+    
+    let namNay = 2025;
+    
+
+    document.writeln("xinchào" +" "+ thongTinSV.hoTen +" "+thongTinSV.lop+thongTinSV.diaChi.thanhPho+thongTinSV.diaChi.to+thongTinSV.diaChi.soNha+(namNay-thongTinSV.tuoi)+"<br>" )
+
+    //soThuHai=parseInt(soThuHai);
+    soThuHai=parseFloat(soThuHai);
+    document.write(soThuHai);
+
+    
+
+    </script>
+    
+</body>
+</html>
