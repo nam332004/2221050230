@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="b8.js"></script>
+    <script>
+        let donHang={
+            maDonHang:"1342325231",
+            thongTinKhachHang:{
+                    hoTen:"Nguyễn Hoàng Nam",
+                    soDienThoai: "0369491566",
+                    trangThai:true,
+
+        },
+            danhSachSP:{
+                caPhe:{
+                    maSanPham:"1",
+                    tenSanPham:"Cà phê",
+                    soLuong:2,
+                    giaTien:50,
+                },
+                matCha:{
+                    maSanPham:"2",
+                    tenSanPham:"matcha",
+                    soLuong:3,
+                    giaTien:20,
+                },
+                traSua:{
+                    maSanPham:"3",
+                    tenSanPham:"trà sữa",
+                    soLuong:5,
+                    giaTien:60,
+                }
+        },
+            trangThai:true,
+            diaChi:"sdahfasodf",
+            
+        }
+        tong = (donHang.danhSachSP.caPhe.soLuong*donHang.danhSachSP.caPhe.giaTien)+
+               (donHang.danhSachSP.matCha.soLuong*donHang.danhSachSP.matCha.giaTien)+
+               (donHang.danhSachSP.traSua.soLuong*donHang.danhSachSP.traSua.giaTien),
+        document.writeln("giá tiền"+"="+tong+"<br>")
+
+        //string
+        let hoTen = "nguyễn hoàng nam"
+        document.writeln(hoTen.length)
+         
+        let myString = "hello";
+        document.writeln(myString[4]);
+        document.writeln(myString.slice(1,4));
+        document.writeln(myString.replace("hello","hi"));//thay thế ở trước bằng ở sau
+        document.writeln(myString.toUpperCase());//viết hoa
+        document.writeln(myString.indexOf("o"));//kí tự cần tìm kiếm
+        document.writeln(myString.includes("h"));//kiểm tra có tồn tại hay ko
+        document.writeln(myString.split("e"));//tách chuỗi thành mảng split
+        document.writeln(myString.startsWith("Hi"));//kiểm tra kí tự có bắt đầu bằng chuỗi đang tìm kiếm ko
+
+        var pi =3.1423;
+        pi.toFixed(2);
+        
+        document.writeln(isNaN(3));
+
+        let today= new Date(2025-9-28);
+        //lấy ra năm
+        document.writeln(today.getFullYear());
+        //lấy tháng
+        document.writeln(today.getMonth());
+        //lấy ngày 
+        document.writeln(today.getDate());
+
+
+    
+
+    </script>
+</body>
+</html>
