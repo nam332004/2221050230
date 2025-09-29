@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=u], initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="10.js"></script>
+    <script>
+        //MẢNG
+        let arr = [1,2,3,4,'a','b','c',2,3];
+        //document.write(Array.isArray(arr));//check xem co phai mang ko
+        //document.write(arr.length);//kiem tra do dai mang
+        //document.write(arr[2]); //lấy phần tử của vị trí 2+1
+        document.writeln(arr.indexOf(3));//kiểm tra có số 3 trong mảng ko
+        document.writeln(arr.lastIndexOf(3));//kiểm tra có số 3 trong mảng ko từ cuối đến đầu
+        arr[3]=6;//thay đổi phần tử trong mảng
+        document.writeln(arr);
+        // let a, b, c, d;
+        // a=[1,2,3,4];
+        // b="java";
+        // c=[42,"JS"];
+        // d=a.concat(b,c);//nối các phần tử vào trong 1 mảng
+        // //d=d.join("-");//biến 1 mảng thành 1 chuỗi
+        // d.pop();//xóa phần tử cuối cùng trong mảng
+        // document.writeln(d);
+        // d.push("nam");//thêm 1 phần tử vào cuối
+        // document.writeln(d);
+        // d.reverse();//đảo ngược phần tử
+        // document.writeln(d);
+        // //d.shift()//xóa phần tử đầu tiên 
+        // //d.unshift()//thêm phần tử vào đầu mảng
+        
+
+        // let so = 10;
+        // let soCuoi = parseInt(so[so.length - 1]);
+        // if(soCuoi%2==0){
+        //     document.writeln("10 là số chẵn")
+        // }
+        // else{
+        //     document.writeln("10 là số lẻ")
+        // }
+
+        let now = new Date().getHours();
+        // 5-10:chào buổi sáng;
+        // 10-13:chào buổi trưa
+        // 13-17:chào buổi chiều
+        // 17-22:chào buổi tối
+        // còn lại:chào buổi đêm
+        document.writeln(now);
+        if(now>5 && now < 10 ){
+            document.writeln("chào buổi sáng")
+        }
+        else if(now >= 10 && now < 13){
+            document.writeln("chào buổi trưa")
+
+        }
+        else if(now >= 13 && now < 17){
+            document.writeln("chào buổi chiều")
+
+        }
+        else if(now >= 17 && now < 22){
+            document.writeln("chào buổi tối")
+
+        }
+        else{
+            document.writeln("chào buổi đêm")
+
+        }
+
+
+        //a,b,c
+        // tổng = điểm a nhân 0.6 cộng điểm b nhân 0.3 cộng c nhân 0.1
+        // tổng nằm trong khoảng 8 đến 10 :
+        // 7-8:B
+        // 5-7:C
+        // 4-5:D
+        // nhỏ hơn 4 F
+
+        let a,b,c
+        a= 1;
+        b= 8;
+        c=10;
+        let tong=a*0.6+b*0.3+c*0.1;
+        if(tong <4){
+            document.writeln("F")
+
+        }else if(tong)
+
+
+
+        
+
+    </script>
+    
+</body>
+</html>
