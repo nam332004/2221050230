@@ -83,10 +83,19 @@
         b= 8;
         c=10;
         let tong=a*0.6+b*0.3+c*0.1;
-        if(tong <4){
+        if(tong <=4){
             document.writeln("F")
 
-        }else if(tong)
+        }else if(tong>4&&tong<=5){
+            document.writeln("D")
+        }
+        else if(tong>=5&&tong<7){
+            document.writeln("c")
+        }else if(tong>=7&&tong<=8){
+            document.writeln("B")
+        }else {
+            document.writeln("A")
+        } 
 
 
 
