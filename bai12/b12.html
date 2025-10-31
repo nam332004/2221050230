@@ -20,6 +20,11 @@
                     <input type="number" id="diemC">
                  </div>
                  <button onclick="tinhDiem()">Tính</button>
+                 <button onclick="tong()">Tính tổng</button>
+                 <button onclick="hieu()">Tính hiệu</button>
+                 <button onclick="tich()">Tính tích</button>
+                 <button onclick="thuong()">Tính thương</button>
+
                  <div>
                     Kết quả: <input type="text" id="ketQua">
                  </div>
@@ -58,7 +63,25 @@
         }
         else if (tongDiem >= 8 && tongDiem <= 10) {
             document.getElementById("ketQua").value = "A";
-        } 
+        }
+    function tinhToan(phepTinh){
+        if (phepTinh == 'tong'){
+            ketQua = soThuNhat + soThuHai ;
+
+        }
+        else if ((phepTinh == 'hieu')){
+            ketQua = soThuNhat - soThuHai ;
+        }
+        else if ((phepTinh == 'tich')){
+            ketQua = soThuNhat * soThuHai ;
+        }
+        else{
+            ketQua = soThuNhat / soThuHai ;
+        }
+        document.getElementById(ketQua).value = ketQua;
+        
+
+    }     
        
     }
     </script>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="chiso">
+        <div><h1>Tính chỉ số BMI</h1></div>
+        <div>
+             <p>Nhập cân nặng</p>
+                    <input type="number" id ="canNang">
+              <p>Nhập chiều cao</p>
+                    <input type="number" id ="chieuCao">     
+
+        </div>
+        <div><button>Tính</button></div>
+        <div>
+            Kết quả: <input type="text" id="ketQua">
+        </div>
+    </div>
+    <script>
+        function tinhDiem() {
+        let canNang =parseFloat (document.getElementById("canNang").value);
+        let chieuCao =parseFloat (document.getElementById("chieuCao").value);
+        let bmi = canNang/(chieuCao*chieuCao);
+        let canhBao = "";
+        if (0 < canNang && canNang == isNaN){
+            canhBao +="cân nặng không hợp lệ"
+        }
+         if (0<chieuCao && chieuCao == isNaN ){
+            canhBao +="chiều cao không hợp lệ"
+        }
+         if (canhBao){
+            alert(canhBao);
+            return;}
+        if (bmi < 18.5) {
+            document.getElementById("ketQua").value = "thiếu cân";
+
+        }
+        else if(18.5<bmi<24.9){
+            document.getElementById("ketQua").value = "bình thường";
+
+        }
+        else if(25<bmi<29.9){
+            document.getElementById("ketQua").value = "thừa cân";
+
+        }
+        else if(30<bmi<39.9){
+            document.getElementById("ketQua").value = "béo phì cấp độ 1-2";
+
+        }
+        else if(40<bmi){
+            document.getElementById("ketQua").value = "béo phì nặng";
+
+        }
+        
+        
+         
+         }
+        
+    </script>
+</body>
+</html>
