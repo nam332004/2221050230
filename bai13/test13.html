@@ -6,60 +6,52 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="chiso">
-        <div><h1>Tính chỉ số BMI</h1></div>
+      <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; background-color:aqua;">
+        <h1>Chỉ số BMI</h1>
         <div>
-             <p>Nhập cân nặng</p>
-                    <input type="number" id ="canNang">
-              <p>Nhập chiều cao</p>
-                    <input type="number" id ="chieuCao">     
-
+            <div>
+            <b>Nhập cân nặng</b>
+            <input type="number" id="canNang"> kg
+            </div>
+            <div>
+            <b>Nhập chiều cao</b>
+            <input type="number" id="chieuCao"> m
+            </div>
         </div>
-        <div><button>Tính</button></div>
         <div>
-            Kết quả: <input type="text" id="ketQua">
+            <button onclick="tinhBMI()">Kết quả</button>
+            <input type="text" id="ketQua" readonly>
+        </div>
+        <div>
+            <img class="anh" src="binhthuong.jpg" alt="" width="200">
         </div>
     </div>
+
     <script>
-        function tinhDiem() {
-        let canNang =parseFloat (document.getElementById("canNang").value);
-        let chieuCao =parseFloat (document.getElementById("chieuCao").value);
-        let bmi = canNang/(chieuCao*chieuCao);
-        let canhBao = "";
-        if (0 < canNang && canNang == isNaN){
-            canhBao +="cân nặng không hợp lệ"
+        function tinhBMI() {
+            var canNang = parseFloat(document.getElementById('canNang').value);
+            var chieuCao = parseFloat(document.getElementById('chieuCao').value);
+            if (isNaN(canNang) || isNaN(chieuCao) || chieuCao <= 0) {
+                alert("Vui lòng nhập số hợp lệ");
+                return;
+            }
+            var chiSoBmi = canNang / (chieuCao * chieuCao);
+            document.getElementById('ketQua').value = chiSoBmi.toFixed(2);
+            if (chiSoBmi < 18.5) {
+                document.getElementsByClassName('anh')[0].src = "thieucan.jpg";
+            } else if (chiSoBmi >= 18.5 && chiSoBmi < 24.9) {
+                document.getElementsByClassName('anh')[0].src = "binhthuong.jpg"; 
+            } else if (chiSoBmi >= 25 && chiSoBmi < 29.9) {
+               document.getElementsByClassName('anh')[0].src = "thuacan.jpg";
+            } else if (chiSoBmi >= 30 && chiSoBmi < 39.9) {
+                document.getElementsByClassName('anh')[0].src = "beophic1.jpg";
+            } else {
+                document.getElementsByClassName('anh')[0].src = "beophinang.jpg";
+            }
         }
-         if (0<chieuCao && chieuCao == isNaN ){
-            canhBao +="chiều cao không hợp lệ"
-        }
-         if (canhBao){
-            alert(canhBao);
-            return;}
-        if (bmi < 18.5) {
-            document.getElementById("ketQua").value = "thiếu cân";
-
-        }
-        else if(18.5<bmi<24.9){
-            document.getElementById("ketQua").value = "bình thường";
-
-        }
-        else if(25<bmi<29.9){
-            document.getElementById("ketQua").value = "thừa cân";
-
-        }
-        else if(30<bmi<39.9){
-            document.getElementById("ketQua").value = "béo phì cấp độ 1-2";
-
-        }
-        else if(40<bmi){
-            document.getElementById("ketQua").value = "béo phì nặng";
-
-        }
-        
-        
-         
-         }
-        
     </script>
+ </script>
+</div>
+
 </body>
 </html>
