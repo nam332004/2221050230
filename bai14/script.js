@@ -6,7 +6,7 @@ let danSachPhim = [
     tuoi:16,
     thoiLuong:2,
     quocGia:"Việt Nam",
-    poster: 
+    poster:"banner.jpg",
     theLoai : "phim chiếu rạp",
     },
 
@@ -17,7 +17,7 @@ let danSachPhim = [
     tuoi:10,
     thoiLuong:1.5,
     quocGia:"Nhật Bản",
-    poster:
+    poster:"bab.jpg",
     theLoai : "phim chiếu rạp",
     
 }
